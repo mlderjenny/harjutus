@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Item</title>
+</head>
+
+
+<body>
+    <nav>
+        <div><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
+        <ul>
+            <li><a href="find-item.html">Find Item</a></li>
+            <li><a href="add-item.html">Add Item</a></li>
+            <li><a href="search-item.html">Search Item</a></li>
+        </ul>    
+    </nav>
+    <main>
+        <section>
+            <h1>Add Item</h1>
+            <form method="GET">
+                <label for=name>Item name</label>
+                <input type="text" id=name name=name 
+                    autofocus required minlength="8" maxlength="50"><br>
+                <label for=desc>Description</label>
+                <textarea rows=5 cols=20 id=desc name=desc></textarea><br>
+                <label for=photo>Photo</label>
+                <input type="text" id=photo name=photo required>
+                <fieldset>
+                    <legend>Things</legend>
+                    <input type="checkbox" id=furniture name=furniture>
+                    <label for=furniture>Furniture</label>
+                    <input type="checkbox" id=sextoys name=sextoys>
+                    <label for=sextoys>Sextoys</label>
+                    <input type="checkbox" id=electronics name=electronics>
+                    <label for=electronics>Electronics</label>
+                    <input type="checkbox" id=other name=other checked>
+                    <label for=other>Other</label>
+                </fieldset>               
+                <fieldset>
+                    <legend>Adults</legend>
+                    <input type="checkbox" id=women name=women>
+                    <label for=women>Women</label>
+                    <input type="checkbox" id=men name=men>
+                    <label for=men>Men</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Children</legend>
+                    <input type="checkbox" id=girls name=girls>
+                    <label for=girls>Girls</label>
+                    <input type="checkbox" id=boys name=boys>
+                    <label for=boys>Boys</label>
+                </fieldset>
+                <label for=price>Price</label>
+                <input type="number" id=price name=price min=0 required> €
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Tradent</a></li>
+                <li><a href="privacy.html" rel="license">Privacy</a></li>
+                <li><a href="help.html" rel="help">Help</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <p><small>Tradent &copy; 2018</small></p>
+    </footer>
+</body>
+</html>
