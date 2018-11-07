@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
+        <ul>
+            <li><a href="find-item.html">Find Item</a></li>
+            <li><a href="add-item.html">Add Item</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Edit Details</h1>
+            <form method="GET">
+                <label for=name>Item name</label>
+                <input type="text" id=name name=name autofocus required><br>
+                <label for=desc>Description</label>
+                <textarea rows=6 cols=30 id=desc name=desc></textarea><br>
+                <label for=photo>Photo</label>
+                <input type="text" id=photo name=photo required><br>
+            <fieldset>
+                <legend>Category</legend>
+                    <input type="checkbox" id=furniture name=furniture> 
+                    <label>Furniture</label>
+                    <input type="checkbox" id=electronics name=electronics> 
+                    <label>Electronics</label>
+                    <input type="checkbox" id=other name=other>
+                    <label>Other</label><br>
+            </fieldset> 
+            <label for=price>Price</label>
+            <input type="number" id=price name=price min=0 required value=15> €<br>
+            <button type="back">Back</button>
+            <button type="save">Save</button>
+        </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Tradent</a></li>
+                <li><a href="privacy.html" rel="license">Privacy</a></li>
+                <li><a href="help.html" rel="help">Help</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <p><small>Tradent &copy; 2018</small></p>
+    </footer>
+</body>
+</html>
+
