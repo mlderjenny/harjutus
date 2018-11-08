@@ -1,0 +1,12 @@
+
+.text-lehmake{
+    color: yellow;
+    font-size: 20px;
+    text-shadow: 3px 4px 10px brown;
+    padding: 50px;
+    border-style: groove;
+    border-color: rgb(221, 40, 40);
+    border-width: 50px;
+    border-radius: 30%;
+}
+
