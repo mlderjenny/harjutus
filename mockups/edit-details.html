@@ -5,52 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="style-xs.css" rel=stylesheet>
+    <link href="style-sm.css" rel=stylesheet media="(min-width: 576px)">
+    <link href="style-md.css" rel=stylesheet media="(min-width: 768px)">
+    <link href="style-lg.css" rel=stylesheet media="(min-width: 992px)">
+    <link href="style-xl.css" rel=stylesheet media="(min-width: 1200px)">
 </head>
 <body>
-    <nav>
-        <div><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
+    <nav class=main-nav>
+        <div class=logo><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
         <ul>
-            <li><a href="find-item.html">Find Item</a></li>
-            <li><a href="add-item.html">Add Item</a></li>
+            <li><a class="main-button button-hover" href="find-item.html">Find Item</a></li>
+            <li><a class="main-button button-hover" href="add-item.html">Add Item</a></li>
         </ul>
     </nav>
+    <div class=nav-space></div>
     <main>
-        <section>
+        <section class=edit-item>
             <h1>Edit Details</h1>
-            <form method="GET">
+            <form method="GET" class="edit-detail-form">
                 <label for=name>Item name</label>
-                <input type="text" id=name name=name autofocus required><br>
+                <input type="text" id=name name=name 
+                    autofocus required minlength="8" maxlength="50"><br>
                 <label for=desc>Description</label>
                 <textarea rows=6 cols=30 id=desc name=desc></textarea><br>
                 <label for=photo>Photo</label>
                 <input type="text" id=photo name=photo required><br>
-            <fieldset>
+
+            <fieldset class=category>
                 <legend>Category</legend>
-                    <input type="checkbox" id=furniture name=furniture> 
-                    <label>Furniture</label>
-                    <input type="checkbox" id=electronics name=electronics> 
-                    <label>Electronics</label>
-                    <input type="checkbox" id=other name=other>
-                    <label>Other</label><br>
-            </fieldset> 
-            <label for=price>Price</label>
-            <input type="number" id=price name=price min=0 required value=15> €<br>
-            <button type="submit">Back</button>
-            <button type="submit">Save</button>
+                <span>
+                    <span>
+                        <input type="checkbox" id=furniture name=furniture> 
+                        <label for=furniture>Furniture</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id=electronics name=electronics> 
+                        <label for=electronics>Electronics</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id=other name=other>
+                        <label for=other>Other</label><br>
+                    </span>
+                </span>
+            </fieldset><br>
+
+            <label class=price-label for=price>Price</label>
+            <input type="number" id=price name=price min=0 required value=15><br>
+            <span class=valuuta> €</span><br>
+            <button type="back" class="edit-detail-back button-hover">Back</button>
+            <button type="save" class="edit-detail-save button-hover">Save</button>
         </form>
         </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Tradent</a></li>
-                <li><a href="privacy.html" rel="license">Privacy</a></li>
-                <li><a href="help.html" rel="help">Help</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+    <footer class=footer>
+        <nav class=footer-nav>
+            <ul class="footer-ul">
+                <li><a class="footer-button button-hover" href="about.html">About Tradent</a></li>
+                <li><a class="footer-button button-hover" href="privacy.html" rel="license">Privacy</a></li>
+                <li><a class="footer-button button-hover" href="help.html" rel="FAQ">Help</a></li>
+                <li><a class="footer-button button-hover" href="google.com" rel="nofollow">Google</a></li>
             </ul>
         </nav>
-        <p><small>Tradent &copy; 2018</small></p>
+        <p class=footer-p><small>Tradent &copy; 2018</small></p>
     </footer>
+    <div class=footer-space></div>
 </body>
 </html>
-

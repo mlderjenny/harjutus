@@ -4,74 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add Item</title>
+    <title>Add new sellable item on Tradent</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="style-xs.css" rel=stylesheet>
+    <link href="style-sm.css" rel=stylesheet media="(min-width: 576px)">
+    <link href="style-md.css" rel=stylesheet media="(min-width: 768px)">
+    <link href="style-lg.css" rel=stylesheet media="(min-width: 992px)">
+    <link href="style-xl.css" rel=stylesheet media="(min-width: 1200px)">
 </head>
-
-
 <body>
-    <nav>
-        <div><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
+    <nav class=main-nav>
+        <div class=logo><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
         <ul>
-            <li><a href="find-item.html">Find Item</a></li>
-            <li><a href="add-item.html">Add Item</a></li>
-            <li><a href="search-item.html">Search Item</a></li>
-        </ul>    
+            <li><a class="main-button button-hover" href="find-item.html">Find Item</a></li>
+            <li><a class="main-button button-hover" href="add-item.html">Add Item</a></li>
+        </ul>
     </nav>
+    <div class=nav-space></div>
     <main>
-        <section>
+        <section class=add-item>
             <h1>Add Item</h1>
-            <form method="GET">
+            <form method="GET" class="add-item-form">
                 <label for=name>Item name</label>
-                <input type="text" id=name name=name 
+                <input type="text" id=name name=name
                     autofocus required minlength="8" maxlength="50"><br>
                 <label for=desc>Description</label>
                 <textarea rows=5 cols=20 id=desc name=desc></textarea><br>
                 <label for=photo>Photo</label>
-                <input type="text" id=photo name=photo required>
-                <fieldset>
-                    <legend>Things</legend>
-                    <input type="checkbox" id=furniture name=furniture>
-                    <label for=furniture>Furniture</label>
-                    <input type="checkbox" id=sextoys name=sextoys>
-                    <label for=sextoys>Sextoys</label>
-                    <input type="checkbox" id=electronics name=electronics>
-                    <label for=electronics>Electronics</label>
-                    <input type="checkbox" id=other name=other checked>
-                    <label for=other>Other</label>
-                </fieldset>               
-                <fieldset>
-                    <legend>Adults</legend>
-                    <input type="checkbox" id=women name=women>
-                    <label for=women>Women</label>
-                    <input type="checkbox" id=men name=men>
-                    <label for=men>Men</label>
-                </fieldset>
-                <fieldset>
-                    <legend>Children</legend>
-                    <input type="checkbox" id=girls name=girls>
-                    <label for=girls>Girls</label>
-                    <input type="checkbox" id=boys name=boys>
-                    <label for=boys>Boys</label>
-                </fieldset><br>
-                <label for=colors>Colors</label>
-                <input type="text" id=color name=color><br><br>
+                <input type="text" id=photo name=photo required><br>
 
-                <label for=price>Price</label>
-                <input type="number" id=price name=price min=0 required> €
-                <button type="submit">Submit</button>
+            <fieldset class=category>
+            <legend>Category</legend>
+        <span>
+            <span>
+                <input type="checkbox" id=furniture name=furniture>
+                <label for=furniture>Furniture</label>
+            </span>
+            <span>
+                <input type="checkbox" id=electronics name=electronics>
+                <label for=electronics>Electronics</label>
+            </span>
+            <span>
+                <input type="checkbox" id=other name=other checked>
+                <label for=other>Other</label>
+            </span>
+        </span> 
+            </fieldset><br>
+            
+                <label class=price-label for=price>Price</label>
+                <input type="number" id=price name=price min=0 required>
+                <span class=valuuta> €</span><br>
+                <button type="submit" class="add-item-submit button-hover">Submit</button>
             </form>
         </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Tradent</a></li>
-                <li><a href="privacy.html" rel="license">Privacy</a></li>
-                <li><a href="help.html" rel="help">Help</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+    <footer class=footer>
+        <nav class=footer-nav>
+            <ul class="footer-ul">
+                <li><a class="footer-button button-hover" href="about.html">About </a></li>
+                <li><a class="footer-button button-hover" href="privacy.html" rel="license">Privacy</a></li>
+                <li><a class="footer-button button-hover" href="help.html" rel="help">FAQ</a></li>
+                <li><a class="footer-button button-hover" href="google.com" rel="nofollow">Google</a></li>
             </ul>
         </nav>
-        <p><small>Tradent &copy; 2018</small></p>
+        <p class=footer-p><small>Tradent &copy; 2018</small></p>
     </footer>
+    <div class=footer-space></div>
 </body>
 </html>
