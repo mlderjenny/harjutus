@@ -15,48 +15,57 @@
     <meta property="og:title" content="About Tradent Company">
     <meta property="og:description" content="Lorem ipsum dolor sit amet, about Tradent consectetur adipiscing elit.">
     <meta property="og:image" content="https:tradent.eu//Shared/Pictures/Logo.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="style-xs.css" rel=stylesheet>
+    <link href="style-sm.css" rel=stylesheet media="(min-width: 576px)">
+    <link href="style-md.css" rel=stylesheet media="(min-width: 768px)">
+    <link href="style-lg.css" rel=stylesheet media="(min-width: 992px)">
+    <link href="style-xl.css" rel=stylesheet media="(min-width: 1200px)">
 </head>
 <body>
-    <nav>
-        <div><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
-        <ul>
-            <li><a href="find-item.html">Find Item</a></li>
-            <li><a href="add-item.html">Add Item</a></li>
-        </ul>
-    </nav>
-    <main>
-        <article itemscope itemtype="http://schema.org/Organization">
-            <header> 
+        <nav class=main-nav>
+            <div class=logo><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
+                <ul>
+                    <li><a class="main-button button-hover" href="find-item.html">Find Item</a></li>
+                    <li><a class="main-button button-hover" href="add-item.html">Add Item</a></li>
+                </ul>
+        </nav>
+        <div class=nav-space></div>
+<main>
+    <article class=about itemscope itemtype="http://schema.org/Organization">
+        <header> 
              <!-- SEO: 6 sõna -->   
-            <h1>About <span itemprop="name">Tradent</span></h1>
+            <h1 class=about-title>About <span itemprop="name">Tradent</span></h1>
             <blockquote>
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
             "Ei ole ka kedagi, kes armastab ja otsib ja tahab valu iseennast, lihtsalt sellepärast, et see on valu..."
-        </blockquote>
+            </blockquote>
         </header>
-            <section>
-            <h2>Our History</h2>
+        <section class=edit-item>
+            <h2 class=item-title>Our History</h2>
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4iV6hk52v7o?controls=0&autoplay=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>
+            <p class=item-desc-about>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien arcu, lacinia eu consequat sit amet, aliquet eget mauris. Fusce mollis finibus convallis. Donec vehicula dui eget neque ultricies volutpat. Nullam rhoncus bibendum leo, faucibus faucibus sapien rhoncus in. Integer congue est vel augue faucibus, nec rhoncus ligula sodales. Integer a nisl pellentesque, faucibus lectus vitae, auctor orci. Donec ultricies eleifend hendrerit. Etiam arcu lacus, efficitur in nulla sed, mollis pulvinar quam.
             </p>
-            <p> 
+            <p class=item-desc-about> 
             Quisque mattis orci et lobortis convallis. Sed est odio, porta sed augue in, placerat porta mauris. Aenean porta molestie diam, at venenatis ante semper ac. Duis feugiat lobortis tortor, ut bibendum augue scelerisque vitae. Donec tristique porta luctus. Praesent luctus blandit scelerisque. Integer consectetur hendrerit venenatis. Donec vehicula imperdiet ante, at dictum risus ornare non. Maecenas lobortis, est in dapibus tristique, tortor nunc sagittis nisi, a ullamcorper magna nibh vel felis. Integer eu vestibulum lectus. Curabitur sed est semper, tempus eros non, pharetra nibh. Aliquam erat volutpat. Duis vulputate sodales tincidunt. Cras in ullamcorper neque. Duis fringilla mi eu massa auctor volutpat.
             </p>
             </section>
-            <section> 
-            <h2>What do we do?</h2>
-            <p> 
+            <section class=edit-item> 
+            <h2 class=item-title>What do we do?</h2>
+            <p class=item-desc-about> 
             Donec efficitur egestas odio a lacinia. Ut aliquam nunc quis pretium fermentum. Duis vel tristique lacus. Fusce maximus, sapien sit amet pulvinar tristique, nibh tellus ornare nisl, vitae pulvinar mi ex nec orci. Maecenas consequat rhoncus egestas. Pellentesque vitae odio ac erat pulvinar lacinia. Pellentesque volutpat ut leo ullamcorper dapibus. Proin fringilla vulputate massa, at pretium nibh viverra quis.
             </p>
-            <p> 
+            <p class=item-desc-about> 
             Aliquam consequat, augue quis dignissim laoreet, ante turpis finibus est, et maximus lectus libero nec enim. Vestibulum vulputate malesuada ipsum, sed facilisis mi dignissim eget. Cras quis sapien in nisl pulvinar fermentum. Nullam sed nisi nec est congue tempus. Fusce augue turpis, fringilla a rutrum ac, vestibulum ut diam. Integer eleifend, orci ac volutpat consequat, nibh augue porta dui, eget luctus sem augue id urna. Pellentesque et egestas tortor. Suspendisse viverra ut dolor sed pharetra. Sed posuere aliquet libero, eu commodo augue elementum nec.
             </p>
-            <p> 
+            <p class=item-desc-about> 
             Etiam ac massa a purus tempor volutpat eu et purus. Phasellus vel arcu dolor. Phasellus tempor posuere orci et sollicitudin. Sed sed commodo purus, ac tristique neque. Curabitur varius commodo massa, et ultricies ipsum efficitur vel. Cras tristique turpis quis nibh eleifend, ac tincidunt elit sollicitudin. Vivamus a nisl posuere, mattis eros in, dictum augue. Nulla feugiat dui in libero sagittis sodales. Mauris risus enim, vestibulum vestibulum eros nec, fringilla auctor sapien. Vestibulum eget pharetra tortor. Nunc blandit ex et nisi vulputate posuere. Vestibulum ac est enim.
             </p>
+        </div>
         </section>
-        <footer> 
+        <footer class=edit-item> 
             <h2>Our Contacts</h2>
             <address>
                 <span itemprop="legalName">Tradent Ltd.</span> <br>
@@ -72,16 +81,17 @@
         </footer>
         </article>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Tradent</a></li>
-                <li><a href="privacy.html" rel="license">Privacy</a></li>
-                <li><a href="help.html" rel="help">Help</a></li>
-                <li><a href="google.com" rel="nofollow">Google</a></li>
-            </ul>
-        </nav>
-        <p><small>Tradent &copy; 2018</small></p>
-    </footer>
+    <footer class=footer>
+            <nav class=footer-nav>
+                <ul class="footer-ul">
+                    <li><a class="footer-button button-hover" href="about.html">About Tradent</a></li>
+                    <li><a class="footer-button button-hover" href="privacy.html" rel="license">Privacy</a></li>
+                    <li><a class="footer-button button-hover" href="help.html" rel="Help">FAQ</a></li>
+                    <li><a class="footer-button button-hover" href="google.com" rel="nofollow">Google</a></li>
+                </ul>
+            </nav>
+            <p class=footer-p><small>Tradent &copy; 2018</small></p>
+        </footer>
+        <div class=footer-space></div>
 </body>
 </html>

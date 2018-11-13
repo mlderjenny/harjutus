@@ -6,6 +6,8 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <style>
      body{
          background-color: bisque;
@@ -15,10 +17,23 @@
 </head>
 
 <body>
-    <img src="/Shared/Pictures/Logo.png" width=200 height=50>
-    <p style="color:aqua">Hello</p>
-
-    <section> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/Shared/Pictures/Logo.png" alt="Tradent">
+        </a>
+        <button class=navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=navbar-toggler-icon></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-pills">
+                <li class="nav-item"><a class="nav-link active" href="#">Find Item</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Add Item</a></li>
+            </ul>
+        </div>  
+    </nav>
+        <p style="color:aqua">Hello</p>
+        <section> 
             <h2>What do we do?</h2>
             <p class="text-1"> 
             Donec efficitur egestas odio a lacinia. Ut aliquam nunc quis pretium fermentum. Duis vel tristique lacus. Fusce maximus, sapien sit amet pulvinar tristique, nibh tellus ornare nisl, vitae pulvinar mi ex nec orci. Maecenas consequat rhoncus egestas. Pellentesque vitae odio ac erat pulvinar lacinia. Pellentesque volutpat ut leo ullamcorper dapibus. Proin fringilla vulputate massa, at pretium nibh viverra quis.
@@ -35,8 +50,8 @@
             <p class="float-clear"> 
                 <img src="/Shared/Pictures/WoodenBowl.png" alt="Wooden bowl" class=float-image>
             EtiamacmassaapurustemporvolutpateuetpurusPhasellusvelarcudolorPhasellus tempor posuere orci et sollicitudin. Sed sed commodo purus, ac tristique neque. Curabitur varius commodo massa, et ultricies ipsum efficitur vel. Cras tristique turpis quis nibh eleifend, ac tincidunt elit sollicitudin. Vivamus a nisl posuere, mattis eros in, dictum augue. Nulla feugiat dui in libero sagittis sodales. Mauris risus enim, vestibulum vestibulum eros nec, fringilla auctor sapien. Vestibulum eget pharetra tortor. Nunc blandit ex et nisi vulputate posuere. Vestibulum ac est enim.
-        </p>
-        </section>
+            </p>
+    </section>
         <div class=parent>
             <div class=current>
                 <div class=child>
@@ -53,5 +68,8 @@
         </div>
         <div class=box2>
         </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
     </html>

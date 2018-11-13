@@ -5,77 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Find item on Tradent</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="style-xs.css" rel=stylesheet>
+    <link href="style-sm.css" rel=stylesheet media="(min-width: 576px)">
+    <link href="style-md.css" rel=stylesheet media="(min-width: 768px)">
+    <link href="style-lg.css" rel=stylesheet media="(min-width: 992px)">
+    <link href="style-xl.css" rel=stylesheet media="(min-width: 1200px)">
 </head>
 <body>
-    <nav>
-        <div><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
+     <nav class=main-nav>
+            <div class=logo><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
         <ul>
-            <li><a href="find-item.html">Find Item</a></li>
-            <li><a href="add-item.html">Add Item</a></li>
+            <li><a class="main-button button-hover" href="find-item.html">Find Item</a></li>
+            <li><a class="main-button button-hover" href="add-item.html">Add Item</a></li>
         </ul>
     </nav>
+            <div class=nav-space></div>
     <main>
         <section>
             <h1>Find Item</h1>
-            <form method="GET">
+            <form method="GET" class="search-form">
                 <input type="search" name=search >
-                <button type="submit">
+                <button class=search-submit type="submit">
                 <img src="/Shared/Pictures/Search.png">
                 </button>
+                <div>
+                    <button class=search-extra type="button"><div></div></button>
+                </div>
             </form>
-        <section>
-            <figure>
+        <section class="gallery">
+            <figure class=poster>
                 <img src="/Shared/Pictures/EspressoMaker.png" alt="Espresso Maker stoveover">
                 <figcaption>
                     <h2>Espresso Maker stoveover</h2>
-                    <p>15€</p>
-                    <button type="button">Details</button><br>
+                <div>
+                    <p><em>15€</em></p>
+                    <button type="button">Details</button>
+                </div>
                 </figcaption>
             </figure>
-            <figure>
+            <figure class=poster>
                     <img src="/Shared/Pictures/Glassbowl.png" alt="Glass bowl">
-                    <figcaption>
+                <figcaption>
                         <h2>Glass bowl</h2>
-                        <p>30€</p>
-                        <button type="button">Details</button><br>
+                    <div>
+                        <p><em></em>30€</em></p>
+                        <button type="button">Details</button>
+                    </div>
                 </figcaption>
             </figure>
-            <figure>
+            <figure class=poster>
                     <img src="/Shared/Pictures/Camera.png" alt="Canon EOS 600D Body Black">
-                    <figcaption>
+                <figcaption>
                         <h2>Canon camera</h2>
-                        <p>200€</p>
-                        <button type="button">Details</button><br>
+                    <div>
+                        <p><em></em>200€</em></p>
+                        <button type="button">Details</button>
+                    </div>
                 </figcaption>
             </figure>
-            <figure>
+            <figure  class=poster>
                     <img src="/Shared/Pictures/SofaChair.png" alt="Common sofa chair">
-                    <figcaption>
+                <figcaption>
                         <h2>Common sofa chair</h2>
-                        <p>50€</p>
-                        <button type="button">Details</button><br>
+                    <div>
+                        <p><em>50€</em></p>
+                        <button type="button">Details</button>
+                    </div>
                 </figcaption>
             </figure>
-            <figure>
+            <figure  class=poster>
                     <img src="/Shared/Pictures/Blanket.png" alt="Colorful Blanket">
-                    <figcaption>
+                <figcaption>
                         <h2>Colorful blanket</h2>
-                        <p>25€</p>
-                        <button type="button">Details</button><br>
+                    <div>
+                        <p><em>25€</em></p>
+                        <button type="button">Details</button>
+                    </div>
                 </figcaption>
             </figure>
+            <figure class=poster>
+                    <img src="/Shared/Pictures/EspressoMaker.png" alt="Espresso Maker stoveover">
+                    <figcaption>
+                        <h2>Espresso Maker stoveover</h2>
+                    <div>
+                        <p><em>15€</em></p>
+                        <button type="button">Details</button>
+                    </div>
+                    </figcaption>
+                </figure>
+                <figure class=poster>
+                        <img src="/Shared/Pictures/Glassbowl.png" alt="Glass bowl">
+                    <figcaption>
+                            <h2>Glass bowl</h2>
+                        <div>
+                            <p><em></em>30€</em></p>
+                            <button type="button">Details</button>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class=poster>
+                        <img src="/Shared/Pictures/Camera.png" alt="Canon EOS 600D Body Black">
+                    <figcaption>
+                            <h2>Canon camera</h2>
+                        <div>
+                            <p><em></em>200€</em></p>
+                            <button type="button">Details</button>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure  class=poster>
+                        <img src="/Shared/Pictures/SofaChair.png" alt="Common sofa chair">
+                    <figcaption>
+                            <h2>Common sofa chair</h2>
+                        <div>
+                            <p><em>50€</em></p>
+                            <button type="button">Details</button>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure  class=poster>
+                        <img src="/Shared/Pictures/Blanket.png" alt="Colorful Blanket">
+                    <figcaption>
+                            <h2>Colorful blanket</h2>
+                        <div>
+                            <p><em>25€</em></p>
+                            <button type="button">Details</button>
+                        </div>
+                    </figcaption>
+                </figure>
         </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Tradent</a></li>
-                <li><a href="privacy.html" rel="license">Privacy</a></li>
-                <li><a href="help.html" rel="help">Help</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </nav>
-        <p><small>Tradent &copy; 2018</small></p>
-    </footer>
+    <footer class=footer>
+            <nav class=footer-nav>
+                <ul class="footer-ul">
+                    <li><a class="footer-button button-hover" href="about.html">About Tradent</a></li>
+                    <li><a class="footer-button button-hover" href="privacy.html" rel="license">Privacy</a></li>
+                    <li><a class="footer-button button-hover" href="help.html" rel="Help">FAQ</a></li>
+                    <li><a class="footer-button button-hover" href="google.com" rel="nofollow">Google</a></li>
+                </ul>
+            </nav>
+            <p class=footer-p><small>Tradent &copy; 2018</small></p>
+        </footer>
+        <div class=footer-space></div>
 </body>
 </html>

@@ -12,6 +12,7 @@
     --bg-green: #28b78D;
     --bg-black: #0f0f0f;
     --bg-gray: #e0e0e0;
+    --inpput-gray: #f2f2f2;
     --hl-yellow: #f2c94c;
     --text-white: #f2f2f2;
     font-family: 'Roboto', sans-serif;
@@ -51,6 +52,19 @@ h1 {
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
+}
+.about-title{
+    font-size: 24px;
+    text-align: center;
+    
+}
+blockquote{
+    position: relative;
+    padding-left: 1em;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 100px;
 }
 .main-nav {
     display: flex;
@@ -114,12 +128,62 @@ h1 {
    width: 454px;
    margin: 0 auto;
 }
+.item-details {
+    width: 485px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 235px 1fr;
+    grid-template-rows: 42px 1fr 1fr 2fr;
+    grid-template-areas: 
+        "header header"
+        "desc desc"
+        "picture category"
+        "picture buttons";
+    gap: 16px;
+}
+.item-details p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.item-title {
+    grid-area: header;
+    font-size: 24px;
+    font-weight: 500;
+}
+.item-desc {
+    grid-area: desc;
+    font-size: 12px;
+}
+.item-desc-about{
+    position: relative;
+    font-size: 14px;
+    margin-left: 0px;
+    margin-right: -110px;
+    text-align: justify;
+}
+.item-image {
+    grid-area: picture;
+    width: 235px;
+}
+.item-price-cat {
+    grid-area: category;
+}
+.item-category{
+    font-size: 14px;
+    margin-bottom: 8px!important;
+}
+.item-price{
+    font-size: 24px;
+    font-weight: bold;
+}
+.item-buttons {
+    grid-area: buttons;
+}
 .add-item-form, .edit-detail-form {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
-
 .add-item-form, .edit-detail-form > label {
     display: inline-block;
     /*width: 70px;*/
@@ -171,7 +235,7 @@ h1 {
     line-height: 36px;
     width: 241px;
 }
-.add-item-submit, .edit-detail-back, .edit-detail-save {
+.add-item-submit, .edit-detail-back, .edit-detail-save, .item-edit, .item-back {
     width: 366px;
     height: 36px;
     line-height: 36px;
@@ -186,11 +250,118 @@ h1 {
 .edit-detail-back, .edit-detail-save {
     width: 178px;
 }
-.edit-detail-back {
+.item-edit, .item-back {
+    width: 234px;
+}
+.item-edit{
+    margin-bottom: 8px;
+}
+.edit-item-back, .item-back {
     margin-right: 8px;
     background-color: var(--bg-black);
 }
 .price-label, #price, .valuuta, .add-item-submit, .edit-detail-back, .edit-detail-save {
     position: relative;
     top: -21px;
+}
+.poster {
+    width: 234px;
+    margin: 0 0 16px 16px;
+    background-color: var(--bg-gray);
+}
+.poster > figcaption, .poster > img {
+    width: 234px;
+}
+.poster h2 {
+    margin: 8px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+}
+.poster div {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--bg-black);
+}
+.poster p {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+}
+.poster em {
+    font-weight: normal;
+    font-style: normal;
+}
+.poster button {
+    width: 63px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    border: none;
+    text-decoration: none;
+    border-left: 2px solid var(--bg-green);
+}
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.search-form input {
+    width: 512px;
+    height: 36px;
+    border: none;
+    background-color: var(--text-white);
+    border-bottom: 2px solid var(--bg-black);
+}
+.search-form > .search-submit {
+    height: 36px;
+    margin: 0;
+    border: none;
+    background-color: var(--text-white);
+    border-bottom: 2px solid var(--bg-black);
+}
+.search-form > div {
+    width: 100%;
+}
+.search-form .search-extra {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.search-form .search-extra > div {
+    height: 0;
+    width: 0;
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+    border-bottom: 26px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 26px solid var(--bg-black);
+}
+.search-form .search-extra > div::after {
+    content: "+";
+    color: var(--text-white);
+    font-size: 24px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.gallery {
+    width: 7356px;
+    column-count: 1;
+    margin: 0 auto;
+    /*column-width: 234px;
+    column-gap: 16px;*/
+}
+.poster {
+    page-break-inside: avoid;
+    break-inside: avoid;
 }

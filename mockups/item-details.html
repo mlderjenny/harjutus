@@ -15,21 +15,29 @@
     <meta property="og:title" content="Details on Espresso Maker stovetop">
     <meta property="og:description" content="This Espresso Maker is only a few months old, but still works great!">
     <meta property="og:image" content="https:tradent.eu//Shared/Pictures/EspressoMaker.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="style-xs.css" rel=stylesheet>
+    <link href="style-sm.css" rel=stylesheet media="(min-width: 576px)">
+    <link href="style-md.css" rel=stylesheet media="(min-width: 768px)">
+    <link href="style-lg.css" rel=stylesheet media="(min-width: 992px)">
+    <link href="style-xl.css" rel=stylesheet media="(min-width: 1200px)">
 </head>
 <body>
-    <nav>
-        <div><a href="/"><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
+    <nav class=main-nav>
+        <div class=logo><a href="/" ><img src="/Shared/Pictures/Logo.png" alt="Tradent"></a></div>
         <ul>
-            <li><a href="find-item.html">Find Item</a></li>
-            <li><a href="add-item.html">Add Item</a></li>
+            <li><a class="main-button button-hover" href="find-item.html">Find Item</a></li>
+            <li><a class="main-button button-hover" href="add-item.html">Add Item</a></li>
         </ul>
     </nav>
+    <div class=nav-space></div>
     <main>
         <section itemscope itemtype="http://schema.org/product">
             <h1>Item Details</h1>
-            <article>
-                <h2 itemprop="name">Espresso Maker stoveover</h2>
-                <p itemprop="description">
+            <article class="item-details">
+                <h2 class=item-title itemprop="name">Espresso Maker stoveover</h2>
+                <p class=item-desc itemprop="description">
                     This Espresso Maker is only a few months old, but still works great!
                     It has been thoroughly cleaned to mint condition.
                     Made of thick, durable aluminium. 
@@ -37,40 +45,34 @@
                     The handle sticks outreasonably far from the body,
                     so as to avoid contact with the heat.
                 </p>
-                <img itemprop="image" src="/Shared/Pictures/EspressoMaker.png" alt="Espresso Maker stoveover">
-                <p>Category:<span itemprop="typeofGood">Other</span></p>
-                <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                    <span itemprop="price">15%</span>
+                    <img class=item-image itemprop="image" src="/Shared/Pictures/EspressoMaker.png" alt="Espresso Maker stoveover">
+            <div class=item-price-cat>
+                <p class=item-category>Category:
+                    <span itemprop="typeofGood" >Other</span>
                 </p>
-                <button type="button">Edit</button><br>
-                <button type="button">Back</button>
-        <footer> 
-            <h2>Our Contacts</h2>
-                <address>
-                <span itemprop="legalName">Tradent Ltd.</span> <br>
-                Tel: <a href="tel:+37256250067" itemprop="telephone">+37256250067</a> <br>
-                Email: <a href="mailto:info@tradent.eu" itemprop="email">info@tradent.eu</a> <br> <br>
-                <span itemprop="address">
-                Tamme road 12, <br>
-                Tallinn city, <br>
-                Harjumaa county, <br>
-                Estonia 74012
-                </span>
-                </address>
-        </footer>
+                <p class=item-price itemprop="offers" 
+                itemscope itemtype="http://schema.org/Offer">
+                    <span itemprop="price">15€</span>
+                </p>
+            </div>
+            <div class=item-buttons>
+                <button class=item-edit type="button">Edit</button><br>
+                <button class=item-back type="button">Back</button>
+            </div>
             </article>
         </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Tradent</a></li>
-                <li><a href="privacy.html" rel="license">Privacy</a></li>
-                <li><a href="help.html" rel="help">Help</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+    <footer class=footer>
+        <nav class=footer-nav>
+            <ul class="footer-ul">
+                <li><a class="footer-button button-hover" href="about.html">About </a></li>
+                <li><a class="footer-button button-hover" href="privacy.html" rel="license">Privacy</a></li>
+                <li><a class="footer-button button-hover" href="help.html" rel="help">FAQ</a></li>
+                <li><a class="footer-button button-hover" href="google.com" rel="nofollow">Google</a></li>
             </ul>
         </nav>
-        <p><small>Tradent &copy; 2018</small></p>
+        <p class=footer-p><small>Tradent &copy; 2018</small></p>
     </footer>
+    <div class=footer-space></div>
 </body>
 </html>

@@ -9,3 +9,7 @@
     height: 93px;
     width: 100%;
 }
+.gallery {
+    width: auto;
+    column-count: 2;
+}

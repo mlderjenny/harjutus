@@ -1,0 +1,11 @@
+.item-details {
+    width: 734px;
+    grid-template-areas: 
+        "header header"
+        "picture category"
+        "picture desc"
+        "picture buttons";
+}
+.gallery {
+    column-count: 3;
+}
